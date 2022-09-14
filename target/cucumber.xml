@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="25.789">
+    <testcase classname="Registration" name="login-verfication wrong password" time="25.346">
+        <failure message="expected:&lt;...biltelefonnummer ein[]&gt; but was:&lt;...biltelefonnummer ein[trtrtrtrtrt]&gt;" type="org.junit.ComparisonFailure">
+            <![CDATA[Given the user navigate to the registration page............................passed
+When the user type wrong email and click submit.............................passed
+Then the error msg appear "Geben Sie Ihre E-Mail-Adresse oder Mobiltelefonnummer eintrtrtrtrtrt".failed
+
+StackTrace:
+org.junit.ComparisonFailure: expected:<...biltelefonnummer ein[]> but was:<...biltelefonnummer ein[trtrtrtrtrt]>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at StepDefinitions.Steps.the_error_msg_appear(Steps.java:51)
+	at ✽.the error msg appear "Geben Sie Ihre E-Mail-Adresse oder Mobiltelefonnummer eintrtrtrtrtrt"(file:///C:/Users/Ahmed%20Alwany/eclipse-workspace/GroupB.PageObjectModel/src/test/java/features/registration.feature:9)
+]]>
+        </failure>
+    </testcase>
+</testsuite>
